@@ -1,70 +1,110 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SF & TMD Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f8fa;
+      color: #333;
+    }
+
     header {
-      background-color: #2c3e50;
-      color: #fff;
-      padding: 20px;
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+      color: white;
       text-align: center;
+      padding: 60px 20px 40px;
+      border-bottom: 5px solid #2980b9;
     }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
     section {
-      padding: 20px;
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
     }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #2c3e50;
+    }
+
     .services {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
     }
+
     .card {
-      background-color: white;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 500;
     }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
     footer {
       background-color: #2c3e50;
-      color: #fff;
+      color: white;
       text-align: center;
-      padding: 10px;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>SF & TMD Services</h1>
-  <p>Vos solutions en un seul endroit</p>
-</header>
+  <header>
+    <h1>SF & TMD Services</h1>
+    <p>Des solutions fiables, modernes et personnalisées</p>
+  </header>
 
-<section>
-  <h2>Nos Services</h2>
-  <div class="services">
-    <div class="card">🏠 Immobilier</div>
-    <div class="card">🛡 Sécurité</div>
-    <div class="card">🧽 Nettoyage des domiciles</div>
-    <div class="card">🎨 Sérigraphie numérique</div>
-    <div class="card">💻 Création de sites web</div>
-    <div class="card">📄 Service de secrétariat</div>
-    <div class="card">🧠 Consulting & Marketing</div>
-    <div class="card">🎶 Création musicale</div>
-  </div>
-</section>
+  <section>
+    <h2>Nos Services</h2>
+    <div class="services">
+      <div class="card">🏠 Immobilier</div>
+      <div class="card">🛡 Sécurité</div>
+      <div class="card">🧽 Nettoyage à domicile</div>
+      <div class="card">🎨 Sérigraphie numérique</div>
+      <div class="card">💻 Création de sites web</div>
+      <div class="card">📄 Secrétariat & rédaction</div>
+      <div class="card">🧠 Consulting & Marketing digital</div>
+      <div class="card">🎶 Création musicale (événements)</div>
+    </div>
+  </section>
 
-<footer>
-  <p>Contact : sf.tmd.services@gmail.com | +242 06 955 24 02 / 06 616 92 43</p>
-</footer>
+  <footer>
+    <p>📧 sf.tmd.services@gmail.com | 📞 +242 06 955 24 02 / 06 616 92 43</p>
+  </footer>
 
 </body>
 </html>
